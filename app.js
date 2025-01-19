@@ -8,7 +8,7 @@ const nav = document.querySelector(".nav");
 const toggelerSidebar = document.querySelector(".sidebar-toggler");
 function router(params) {
   const routes = [
-    {path: "/Dashboard", view: Dashboard},
+    {path: "/SPA-vs-filter-search", view: Dashboard},
     {path: "/posts", view: Posts},
     {path: "/products", view: Products},
   ];
@@ -22,7 +22,7 @@ function router(params) {
 
    if (!match) {
      match = {
-       route: {path: "/not-found", view: NotFound},
+       route: {path: "/not-found",  view: Dashboard},
        isMatch: true,
      };
    }
