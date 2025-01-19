@@ -8,7 +8,7 @@ const nav = document.querySelector(".nav");
 const toggelerSidebar = document.querySelector(".sidebar-toggler");
 function router(params) {
   const routes = [
-    {path: "/", view: Dashboard},
+    {path: "/Dashboard", view: Dashboard},
     {path: "/posts", view: Posts},
     {path: "/products", view: Products},
   ];
