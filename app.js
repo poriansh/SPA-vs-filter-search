@@ -1,7 +1,6 @@
 import Dashboard from "./pages/Dashboard.js";
 import Posts from "./pages/Posts.js";
 import Products from "./pages/Products.js";
-import NotFound from "./pages/NotFound.js";
 const contentMain = document.querySelector("#app");
 const navLinks = document.querySelectorAll(".nav__link");
 const nav = document.querySelector(".nav");
