@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("popstate", router);
 
 function updateNavClass() {
-  if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.innerWidth < 778) {
     nav.classList.add("nav--active");
   } else {
     nav.classList.remove("nav--active");
