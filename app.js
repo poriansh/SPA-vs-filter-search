@@ -8,25 +8,25 @@ const nav = document.querySelector(".nav");
 const toggelerSidebar = document.querySelector(".sidebar-toggler");
 function router(params) {
   const routes = [
-    {path: "/", view: Dashboard},
+    {path: "/SPA-vs-filter-search", view: Dashboard},
     {path: "/posts", view: Posts},
     {path: "/products", view: Products},
   ];
-   const allRoutes = routes.map((item) => {
-     return {
-       route: item,
-       isMatch: location.pathname === item.path,
-     };
-   });
-   let match = allRoutes.find((item) => item.isMatch);
+  const allRoutes = routes.map((item) => {
+    return {
+      route: item,
+      isMatch: location.pathname === item.path,
+    };
+  });
+  let match = allRoutes.find((item) => item.isMatch);
 
-   if (!match) {
-     match = {
-       route: {path: "/not-found", view: NotFound},
-       isMatch: true,
-     };
-   }
-   contentMain.innerHTML = match.route.view();
+  if (!match) {
+    match = {
+      route: {path: "/not-found", view: Dashboard},
+      isMatch: true,
+    };
+  }
+  contentMain.innerHTML = match.route.view();
 }
 
 function navigateTo(url) {
